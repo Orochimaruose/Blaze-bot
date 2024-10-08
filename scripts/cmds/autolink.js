@@ -98,7 +98,7 @@ module.exports = {
           }, event.threadID, () => fs.unlinkSync(path), event.messageID);
         });
       } else {
-        api.sendMessage("🪶", event.threadID, event.messageID);
+        api.sendMessage("❌", event.threadID, event.messageID);
       }
     } catch (err) {
       console.error(err);
